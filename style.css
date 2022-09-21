@@ -1,0 +1,24 @@
+/*paragraph*/
+
+@font-face {
+    font-family: 'PPEditorialNew';
+    src: url('PPEditorialNew-Regular.woff2') format('woff2');
+  }
+
+p {
+	font-family: serif;
+}
+
+/*heading 3*/
+
+H3 {
+	color: #4152EC;
+	font-family: sans-serif;
+}
+
+/*CLASSES*/
+
+.faded {
+	opacity: 33%;
+}
+
