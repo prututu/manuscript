@@ -1,24 +1,124 @@
-/*paragraph*/
+/*Garamond*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+
+/*https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654*/
+
+/*PP Editorial New*/
+@font-face {
+	font-family: 'PP Editorial New';
+	src: url('PPPEditorialNew-Thin.woff2') format('truetype');
+	font-weight: 100;
+ }
 
 @font-face {
-    font-family: 'PPEditorialNew';
-    src: url('PPEditorialNew-Regular.woff2') format('woff2');
+	font-family: 'PP Editorial New';
+	src: url('PPEditorialNew-Ultralight.woff2') format('truetype');
+	font-weight: 200;
+ }
+
+ @font-face {
+	font-family: 'PP Editorial New';
+	src: url('PPEditorialNew-Regular.woff2') format('truetype');
+	font-weight: 400;
+ }
+
+ @font-face {
+	font-family: 'PP Editorial New';
+	src: url('PPEditorialNew-Regular.woff2') format('truetype');
+	font-weight: 400;
+ }
+
+
+ .line {
+	border-top: 1px solid black;
+	padding:0px;
+ }
+
+ main {
+	padding:48px;
+	max-width: 500px;
+	margin-left:auto;
+	margin-right:auto;
+ }
+
+ main {
+    display: table; 
+    margin: 100px auto 0px auto;
+    padding:50px;
+	background-color:white;
+}
+
+.break {}
+
+.dateauthor {
+	text-transform: uppercase;
+	font-family: 'PP Editorial New';
+	font-weight: 100;
+	margin-top: 3px;
+	margin-bottom: 0px;
+}
+
+span.keeptogether {
+	white-space: nowrap ;
   }
 
-p {
-	font-family: serif;
+header {
+	text-align: center;
 }
+
+/*paragraph*/
+
+p {
+	font-family: 'EB Garamond', serif;
+	text-align: justify;
+	font-size: 16px;
+}
+
+body{
+	background-color: rgb(245, 245, 245);
+}
+
 
 /*heading 3*/
 
+h1 {
+	font-family: 'PP Editorial New', sans-serif;
+	font-weight: 400;
+	font-size: 35px;
+	line-height: 110%;
+}
+
+H2 {
+	font-family: 'PP Editorial New', sans-serif;
+	font-weight: 200;
+	font-style: italic
+}
+
+h3:before {
+	content: '—'
+}
+
 H3 {
 	color: #4152EC;
-	font-family: sans-serif;
+	font-family: 'PP Editorial New', sans-serif;
+	font-weight: 200;
+	font-style: italic;
+}
+
+H4 {
+	font-family: 'PP Editorial New', sans-serif;
+	font: size 100%;
+	font-weight: 200;
+}
+
+/*Links*/
+a {
+}
+a:visited {
+	color: #4152EC;
+}
+a:hover {
+
 }
 
 /*CLASSES*/
-
-.faded {
-	opacity: 33%;
-}
-
