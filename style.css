@@ -1,7 +1,8 @@
 html {
-	scroll-behavior: smooth;
-  }
-  
+    scroll-behavior: smooth !important;
+	cursor: url('donnormancursor.png') !important;
+}
+
 /* || Typography */
 
 /* Source Serif Pro*/
@@ -83,13 +84,13 @@ nav{
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 200;
 	font-style: italic;
-	font-size: 30px;
+	font-size: 40px;
 	padding: 0.5em 1em;
 	margin:0.25em;
-	margin-left:20px;
+	margin-left:10vw;
 	border-radius: 1.5em;
 	border: 1px solid black;
-	background: none;
+	background: rgb(240, 240, 240);
 	cursor: pointer;
 
 }
@@ -97,7 +98,7 @@ nav{
 .pill:hover {
 	background: black;
 	color:white;
-	cursor: url("assets/donnormancursor.png"), pointer;
+	cursor: url("assets/donnormancursor.png"), auto!important;
 }
 
 header {
@@ -107,15 +108,13 @@ header {
 }
 main {
 	padding:48px;
-	max-width: 500px;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 600px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
  }
 
 main {
     display: table; 
-    margin: -122px auto 100px auto;
+    margin: -190px 15vw 100px auto;
     padding:50px;
 	background-color:white;
 }
@@ -128,7 +127,7 @@ p {
 	font-family: 'Source Serif Pro', serif;
 	font-weight: 400;
 	text-align: justify;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 160%;
 	letter-spacing: -0.005em;
 }
@@ -136,7 +135,7 @@ p {
 H1 {
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 70px;
 	line-height: 110%;
 	letter-spacing: -0.05em;
 }
@@ -144,6 +143,7 @@ H1 {
 H2 {
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 200;
+	font-size: 35px;
 	font-style: italic;
 	
 }
@@ -164,11 +164,20 @@ H3 {
 
 H4 {
 	font-family: 'PP Editorial New', sans-serif;
-	font-size: 80%;
+	font-size: 18px;
 	font-weight: 200;
 	text-transform: uppercase;
 	margin-top: 3px;
 	margin-bottom: 0px;
+}
+H5 {
+	font-family: 'PP Editorial New', sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	font-style: italic;
 }
 
 /*Links*/
@@ -181,7 +190,7 @@ a:visited {
 	color: #4152EC;
 }
 a:hover {
-	color: #eb5081;
-	cursor: url("assets/donnormancursor.png"), pointer;
+	color: #e86a92;
+	cursor: url("assets/donnormancursor.png"), auto !important;
 	
 }
