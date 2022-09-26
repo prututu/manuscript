@@ -1,12 +1,16 @@
-/*Garamond*/
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+html {
+	scroll-behavior: smooth;
+  }
+  
+/* || Typography */
 
-/*https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654*/
+/* Source Serif Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
 /*PP Editorial New*/
 @font-face {
 	font-family: 'PP Editorial New';
-	src: url('PPPEditorialNew-Thin.woff2') format('truetype');
+	src: url('PPEditorialNew-Thin.woff2') format('truetype');
 	font-weight: 100;
  }
 
@@ -24,74 +28,123 @@
 
  @font-face {
 	font-family: 'PP Editorial New';
-	src: url('PPEditorialNew-Regular.woff2') format('truetype');
-	font-weight: 400;
+	src: url('PPEditorialNew-Bold.woff2') format('truetype');
+	font-weight: 700;
  }
 
+/* || TOP OF THE PAGE*/
 
- .line {
+/*text bar at the top*/
+
+#textbox {display:flex; flex-flow:row wrap;}
+
+.alignleft {
+width:27%;
+text-align:left;
+}
+.aligncenter {
+width:46%;
+text-align:center;
+}
+.alignright {
+width:27%;
+text-align:right;
+}
+
+/*LINES*/
+
+.line {
 	border-top: 1px solid black;
+
+ }
+
+.line1 {
+	border-top: 1px solid black;
+	width: 200px;
 	padding:0px;
+	margin:auto;
  }
-
- main {
-	padding:48px;
-	max-width: 500px;
-	margin-left:auto;
-	margin-right:auto;
- }
-
- main {
-    display: table; 
-    margin: 100px auto 0px auto;
-    padding:50px;
-	background-color:white;
-}
-
-.break {}
-
-.dateauthor {
-	text-transform: uppercase;
-	font-family: 'PP Editorial New';
-	font-weight: 100;
-	margin-top: 3px;
-	margin-bottom: 0px;
-}
 
 span.keeptogether {
 	white-space: nowrap ;
   }
 
+p.solid {
+	border: 1px solid black;
+	padding: 15px;
+}
+
+nav{
+	position: sticky;
+	top: 50px;
+}
+
+.pill{
+	font-family: 'PP Editorial New', sans-serif;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 30px;
+	padding: 0.5em 1em;
+	margin:0.25em;
+	margin-left:20px;
+	border-radius: 1.5em;
+	border: 1px solid black;
+	background: none;
+	cursor: pointer;
+
+}
+
+.pill:hover {
+	background: black;
+	color:white
+}
+
 header {
 	text-align: center;
+	margin-bottom: 30px;
+	
 }
+main {
+	padding:48px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+ }
 
-/*paragraph*/
-
-p {
-	font-family: 'EB Garamond', serif;
-	text-align: justify;
-	font-size: 16px;
+main {
+    display: table; 
+    margin: -122px auto 100px auto;
+    padding:50px;
+	background-color:white;
 }
-
 body{
-	background-color: rgb(245, 245, 245);
+	background-color: rgb(240, 240, 240);
 }
 
+/*Text stuff*/
+p {
+	font-family: 'Source Serif Pro', serif;
+	font-weight: 400;
+	text-align: justify;
+	font-size: 14px;
+	line-height: 160%;
+	letter-spacing: -0.005em;
+}
 
-/*heading 3*/
-
-h1 {
+H1 {
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 400;
-	font-size: 35px;
+	font-size: 40px;
 	line-height: 110%;
+	letter-spacing: -0.05em;
 }
 
 H2 {
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 200;
-	font-style: italic
+	font-style: italic;
+	
 }
 
 h3:before {
@@ -103,22 +156,32 @@ H3 {
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 200;
 	font-style: italic;
+	font-size: 25px;
+	margin-top: 40px;
+	margin-bottom:5px;
 }
 
 H4 {
 	font-family: 'PP Editorial New', sans-serif;
-	font: size 100%;
+	font-size: 80%;
 	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 3px;
+	margin-bottom: 0px;
 }
 
 /*Links*/
+
 a {
+	text-decoration: #4152EC underline 1px;
+	text-underline-offset: 3px;
 }
 a:visited {
 	color: #4152EC;
 }
 a:hover {
-
+	color: #eb5081;
+	
 }
 
-/*CLASSES*/
+
