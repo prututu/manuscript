@@ -96,7 +96,8 @@ nav{
 
 .pill:hover {
 	background: black;
-	color:white
+	color:white;
+	cursor: url("assets/donnormancursor.png"), pointer;
 }
 
 header {
@@ -181,7 +182,6 @@ a:visited {
 }
 a:hover {
 	color: #eb5081;
+	cursor: url("assets/donnormancursor.png"), pointer;
 	
 }
-
-
