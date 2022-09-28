@@ -6,7 +6,25 @@ html {
 /* || Typography */
 
 /* Source Serif Pro*/
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+@font-face {
+	font-family: 'Source Serif Pro';
+	src: url('assets/SourceSerifPro-Light.ttf') format('truetype');
+	font-weight: 300;
+ }
+
+ @font-face {
+	font-family: 'Source Serif Pro';
+	src: url('assets/SourceSerifPro-Regular.ttf') format('truetype');
+	font-weight: 400;
+ }
+
+ @font-face {
+	font-family: 'Source Serif Pro';
+	src: url('assets/SourceSerifPro-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+ }
+
+
 
 /*PP Editorial New*/
 @font-face {
@@ -33,7 +51,7 @@ html {
 	font-weight: 700;
  }
 
-/* || TOP OF THE PAGE*/
+/* || TOP OF THE PAGES*/
 
 /*text bar at the top*/
 
@@ -75,7 +93,7 @@ p.solid {
 	padding: 15px;
 }
 
-nav{
+nav {
 	position: sticky;
 	top: 50px;
 }
@@ -106,25 +124,23 @@ header {
 	margin-bottom: 30px;
 	
 }
-main {
-	padding:48px;
-	max-width: 600px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
- }
 
 main {
     display: table; 
+	width: 700px;
     margin: -190px 15vw 100px auto;
     padding:50px;
 	background-color:white;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
+
 body{
 	background-color: rgb(240, 240, 240);
 }
 
 /*Text stuff*/
 p {
-	font-family: 'Source Serif Pro', serif;
+	font-family: 'Source Serif Pro';
 	font-weight: 400;
 	text-align: justify;
 	font-size: 18px;
@@ -135,7 +151,7 @@ p {
 H1 {
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 400;
-	font-size: 70px;
+	font-size: 60px;
 	line-height: 110%;
 	letter-spacing: -0.05em;
 }
@@ -157,7 +173,7 @@ H3 {
 	font-family: 'PP Editorial New', sans-serif;
 	font-weight: 200;
 	font-style: italic;
-	font-size: 25px;
+	font-size: 30px;
 	margin-top: 40px;
 	margin-bottom:5px;
 }
@@ -170,15 +186,17 @@ H4 {
 	margin-top: 3px;
 	margin-bottom: 0px;
 }
+
 H5 {
 	font-family: 'PP Editorial New', sans-serif;
-	font-size: 18px;
-	font-weight: 400;
-	text-transform: uppercase;
-	margin-top: 3px;
-	margin-bottom: 0px;
+	font-weight: 200;
+	text-align: center;
+	font-size: 25px;
+	line-height: 160%;
+	letter-spacing: -0.005em;
 	font-style: italic;
 }
+
 
 /*Links*/
 
